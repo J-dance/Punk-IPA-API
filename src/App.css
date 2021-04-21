@@ -1,38 +1,61 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+.app-page {
+  height: auto;
+  width: 100vw;
+  background-attachment: scroll;
+}
+
+.parallax {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* The background image */
+  background-image: url("./assets/images/beer-tap-2435408_1920.jpg");
+
+  /* Set a specified height, or the minimum height for the background image */
+  min-height: 750px;
+
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+
+  /* Center the background image */
+  background-position: center;
+
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+
+  opacity: 80%;
+}
+
+/* search results display in here */
+#results {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+/* styling for text */
+.noResult {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #ffffff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* for desktop */
+@media only screen and (min-width: 600px) {
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* for mobile/tablet */
+@media only screen and (max-width: 600px) {
+  
+  
 }

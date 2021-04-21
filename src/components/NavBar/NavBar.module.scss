@@ -1,0 +1,26 @@
+@import "../../assets/variables.scss";
+
+.NavBar {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.smallNav {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.icon {
+  font-size: 72px;
+  color: $my-orange;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: $my-blue;
+}

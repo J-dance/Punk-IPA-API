@@ -1,0 +1,55 @@
+@import "../../assets/variables.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: rgba($color: $background-colour, $alpha: 0.05);
+  font-family: $my-font;
+
+  .banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      margin-left: 15px;
+      color: $background-colour;
+    }
+
+    h4 {
+      color: $my-orange;
+      margin-right: 25px;
+    }
+
+    &:hover {
+      background-color: rgba($color: $my-blue, $alpha: 0.2);
+      cursor: pointer;
+    }
+  }
+  
+  .blue {
+    background: rgba($color: $my-blue, $alpha: 0.2);
+  }
+
+  .body {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background: rgba($my-other-grey, 0.5);
+    color: $background-colour;
+
+    .bodyText {
+      padding: 10px;
+    }
+  }
+
+  .image {
+    height: 170px;
+    width: 100px;
+    object-fit: contain;
+  }
+
+}

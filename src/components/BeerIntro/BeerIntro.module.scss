@@ -1,0 +1,73 @@
+@import "../../assets/variables.scss";
+
+.introContainer {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .image {
+      object-fit: contain;
+    }
+  }
+
+  .textContainer {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+    font-family: $my-font;
+  
+    h1 {
+      font-size: 76px;
+      font-weight: 500;
+      color: $background-colour;
+      text-shadow: 3px 3px black;
+    }
+
+    h3 {
+      font-size: 48px;
+      font-weight: 500;
+      color: black;
+      text-shadow: 2px 2px $background-colour;
+    }
+  }
+}
+
+
+// for desktop
+@media only screen and (min-width: 600px) {
+  .imageContainer {
+    height: 80%;
+    width: 40%;
+
+    .image {
+      height: 400px;
+      width: 300px;
+      object-fit: contain;
+      margin: 20px;
+    }
+  }
+  
+}
+
+// for mobile/tablet
+@media only screen and (max-width: 600px) {
+  
+  .imageContainer {
+    height: 80%;
+    width: 60%;
+    
+    .image {
+      height: 300px;
+      width: 250px;
+      object-fit: contain;
+      margin: 10px;
+    }
+  }
+}

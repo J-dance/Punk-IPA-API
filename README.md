@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### App structure
+1.  Fetch data then pass as props to cardlist component.
+2.  In CardList component, map over each beer and pass as props to  the Card component.
+3.  Card component displays the relevant information.
+4.  User types in the search bar to search by beer name. The beers will update onchange of the search text.
+5.  The tick boxes are used to filter the results.
+
+NOTE: design is not responsive.
+
+Last updated 30/03/2021
+Author: Jojo Dance
+
+### App Re-Designed ###
+Date: 20/04/2021
+Complete re-design of styling, however functionality remains the same.
+
+To do:
+- Add parallax scrolling with image
+- add search bar section and appear at correct height
+- create accordian display for each card component
+- make responsive
+- deploy on firebase and add to portfolio
