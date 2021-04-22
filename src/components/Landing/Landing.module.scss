@@ -11,35 +11,21 @@
   justify-content: center;
 
   h1 {
-    font-size: 48px;
     font-family: $my-font;
     color: #7A918D;
-    text-shadow: 5px 5px #000000;
-    letter-spacing: 0.4em;
   }
 }
 
 .text {
-  font-family: $my-font;
   font-size: 20px;
-  letter-spacing: 0.1em;
   text-align: center;
+  letter-spacing: 0.1em;
   margin: 12px;
 }
 
 .ipa_apiContainer {
   position: relative;
  
-  // .ipaAnimation {
-   
-  //   // animation-name: title;
-  //   animation-duration: 5s;
-  //   animation-delay: 1s;
-  //   animation-iteration-count: infinite;
-  //   animation-direction: alternate;
-  //   animation-timing-function: ease-in-out;
-  //   animation-fill-mode: forwards;
-  // }
   .apiContainer {
     position: absolute;
     top: 0%;
@@ -107,4 +93,98 @@
   /* 50% {right: 40%} */
   75% {right: 104px}
   100% {right: 104px}
+}
+
+// Responsive desigb
+
+/* Extra small devices */
+@media only screen and (max-width: 480px) {
+  .landingPage {
+    h1 {
+      font-size: 38px;
+      text-shadow: 5px 5px #000000;
+      letter-spacing: 0.3em;
+    }
+  }
+
+  .text {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin: 12px;
+  }
+
+  // dont show animation on small devices
+  .apiContainer {
+    h1 {
+      display: none;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .landingPage {
+    h1 {
+      font-size: 38px;
+      text-shadow: 5px 5px #000000;
+      letter-spacing: 0.3em;
+    }
+  }
+
+  .text {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin: 12px;
+  }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .landingPage {
+    h1 {
+      font-size: 48px;
+      text-shadow: 5px 5px #000000;
+      letter-spacing: 0.4em;
+    }
+  }
+
+  .text {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    margin: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .landingPage {
+    h1 {
+      font-size: 48px;
+      text-shadow: 5px 5px #000000;
+      letter-spacing: 0.4em;
+    }
+  }
+
+  .text {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin: 12px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .landingPage {
+    h1 {
+      font-size: 48px;
+      text-shadow: 5px 5px #000000;
+      letter-spacing: 0.4em;
+    }
+  }
+
+  .text {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin: 12px;
+  }
 }

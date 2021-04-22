@@ -2,8 +2,6 @@
 
 .introContainer {
   display:flex;
-  flex-direction: row;
-  justify-content: space-between;
 
   .imageContainer {
     display: flex;
@@ -20,19 +18,14 @@
     width: auto;
     flex-direction: column;
     justify-content: center;
-    padding-right: 50px;
     font-family: $my-font;
   
     h1 {
-      font-size: 76px;
-      font-weight: 500;
       color: $background-colour;
       text-shadow: 3px 3px black;
     }
 
     h3 {
-      font-size: 48px;
-      font-weight: 500;
       color: black;
       text-shadow: 2px 2px $background-colour;
     }
@@ -40,34 +33,163 @@
 }
 
 
-// for desktop
-@media only screen and (min-width: 600px) {
-  .imageContainer {
-    height: 80%;
-    width: 40%;
+// Responsive desigb
 
-    .image {
-      height: 400px;
-      width: 300px;
-      object-fit: contain;
-      margin: 20px;
+/* Extra small devices */
+@media only screen and (max-width: 480px) {
+  .introContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .imageContainer {
+      margin: 50px;
+
+      .image {
+        object-fit: contain;
+        width: 200px;
+        height: 400px;
+      }
+    }
+  
+    .textContainer {
+      // padding-right: 50px;
+      text-align: center;
+    
+      h1 {
+        font-size: 36px;
+        font-weight: 500;
+      }
+  
+      h3 {
+        font-size: 28px;
+        font-weight: 500;
+      }
     }
   }
   
 }
 
-// for mobile/tablet
-@media only screen and (max-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .introContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   
-  .imageContainer {
-    height: 80%;
-    width: 60%;
+    .imageContainer {
+      margin: 50px;
+
+      .image {
+        object-fit: contain;
+        width: 200px;
+        height: 400px;
+      }
+    }
+  
+    .textContainer {
+      // padding-right: 50px;
+      text-align: center;
     
-    .image {
-      height: 300px;
-      width: 250px;
-      object-fit: contain;
-      margin: 10px;
+      h1 {
+        font-size: 36px;
+        font-weight: 500;
+      }
+  
+      h3 {
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .introContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  
+    .imageContainer {
+      .image {
+      // size 
+      }
+    }
+  
+    .textContainer {
+      padding-right: 50px;
+    
+      h1 {
+        font-size: 56px;
+        font-weight: 500;
+      }
+  
+      h3 {
+        font-size: 38px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .introContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+  
+    .imageContainer {
+      .image {
+        object-fit: contain;
+        width: 500px;
+        height: 1000px;
+      }
+    }
+  
+    .textContainer {
+      padding-right: 50px;
+    
+      h1 {
+        font-size: 76px;
+        font-weight: 500;
+      }
+  
+      h3 {
+        font-size: 48px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .introContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+  
+    .imageContainer {
+      .image {
+        object-fit: contain;
+        width: 500px;
+        height: 700px;
+      }
+    }
+  
+    .textContainer {
+      padding-right: 50px;
+    
+      h1 {
+        font-size: 76px;
+        font-weight: 500;
+      }
+  
+      h3 {
+        font-size: 48px;
+        font-weight: 500;
+      }
     }
   }
 }

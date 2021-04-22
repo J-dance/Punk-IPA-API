@@ -37,13 +37,9 @@
   .body {
     display: flex;
     flex-direction: row;
-    padding: 5px;
     background: rgba($my-other-grey, 0.5);
     color: $background-colour;
 
-    .bodyText {
-      padding: 10px;
-    }
   }
 
   .image {
@@ -52,4 +48,56 @@
     object-fit: contain;
   }
 
+}
+
+// Responsive desigb
+
+/* Extra small devices */
+@media only screen and (max-width: 480px) {
+  .body {
+    padding: 10px;
+    .bodyText {
+      padding: 12px;
+    }
+  }
+}
+
+/* Small devices */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .body {
+    padding: 10px;
+    .bodyText {
+      padding: 12px;
+    }
+  }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .body {
+    padding: 10px;
+    .bodyText {
+      padding: 12px;
+    }
+  }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .body {
+    padding: 10px;
+    .bodyText {
+      padding: 12px;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .body {
+    padding: 10px;
+    .bodyText {
+      padding: 12px;
+    }
+  }
 }
